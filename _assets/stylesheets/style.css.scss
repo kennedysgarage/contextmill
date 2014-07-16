@@ -1,0 +1,163 @@
+@import "compass";
+@import "reset.css.scss";
+@import "variables.css.scss";
+@import "fontface.css.scss";
+@import "ss-standard.css.scss";
+@import "ss-social-circle.css.scss";
+@import "ss-social-regular.css.scss";
+@import "typography.css.scss";
+@import "grid.css.scss";
+/* ========================================================= Main ===*/
+html, body {
+  background-color: #252429;
+  color: #fff;
+  font-family: 'Effra Regular', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.45;
+  // width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.background {
+  background: url(image-path("city.jpg")) no-repeat 50% 100%;
+  bottom: 96px;
+  bottom: 160px;
+  bottom: -20px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+#content{
+  margin-top: -140px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  right: 0;
+  img{
+    max-width: 130px;
+  }
+  h1{
+    font-family: 'Effra Medium', sans-serif;
+    font-size: 3.65em;
+    line-height: 1;
+    margin: 0 0 5px;
+    span{
+      font-family: 'Effra Light', sans-serif;
+    }
+  }
+  p{
+    line-height: 1;
+    margin: 0 0 40px;
+  }
+}
+/* ========================================================= Parallax.js ===*/
+.wrapper {
+  min-height: 460px;
+  position: absolute;
+  overflow: hidden;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.scene, .layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.scene {
+  min-height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+.layer {
+  position: absolute;
+  div {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+/* ========================================================= Header ===*/
+/* ------
+-- Nav --
+------ */
+nav{
+  ul{
+    li{
+      a{
+
+      }
+    }
+  }
+}
+/* ========================================================= Form ===*/
+form{
+  font-size: 16px;
+  input{
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    min-width: 280px;
+    padding: 12px 12px 10px;
+    outline: none;
+  }
+  button{
+    background-color: #3498DB;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 12px 25px 10px;
+    outline: none;
+    min-width: 280px;
+  }
+}
+/* ========================================================= Footer ===*/
+footer{
+
+}
+/* ========================================================= Respond ===*/
+@media all and (min-width: 41em){
+  body{font-size: 1.125em;}
+  .container{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .row{
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  .col-12 { width: 100%; }
+  .col-9 { width: 75%; }
+  .col-8 { width: 66.7%; }
+  .col-6 { width: 50%; }
+  .col-4 { width: 33.3%; }
+  .col-3 { width: 25%; }
+  form input{
+    margin-right: 5px;
+  }
+  form button{
+    min-width: unset;
+  }
+}
+@media all and (min-width: 960px){
+
+}
