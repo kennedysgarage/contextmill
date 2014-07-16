@@ -1,8 +1,8 @@
 name: "Dactyl"
 permalink: pretty
-author: 
-email:
-url: 
+author: Theron Studios
+email: hello@theronstudios.com
+url: http://theronstudios.com
 
 exclude: ["CNAME","editorconfig.txt","Gemfile","Gemfile.lock","README.md", "RAKEFILE"]
 
